@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8"><title>Perry's Parlor — Owner's Manual</title>
+<style>
+@font-face{font-family:Rye;src:url(../assets/Rye-Regular.ttf)}
+@font-face{font-family:Libre;src:url(../assets/LibreBaskerville.ttf)}
+@font-face{font-family:DejaVu;src:url(../assets/DejaVuSans.ttf)}
+@page{size:Letter;margin:0.55in 0.6in 0.6in}
+@page :first{margin:0}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;font:12pt/1.42 Libre,DejaVu,Georgia,serif;color:#2e1d08}
+h1,h2,h3{font-family:Rye,serif;font-weight:400;color:#5a2a12;line-height:1.15}
+h1{font-size:30pt;margin:0 0 4pt;border-bottom:3px double #b8902f;padding-bottom:4pt}
+h2{font-size:17pt;margin:16pt 0 4pt}
+h3{font-size:13.5pt;margin:12pt 0 2pt}
+p{margin:0 0 7pt}
+.chapter{break-before:page}
+.lead{font-size:13.6pt;color:#4a300f}
+img.shot.w80{width:80%}img.shot.w75{width:75%}img.shot.w70{width:70%}img.shot.w55{width:55%}img.shot.w40{width:40%}img.shot.w35{width:35%}.tight{font-size:11.2pt;line-height:1.34}.tight p{margin-bottom:5pt}.tight h2{margin-top:10pt}.tight td{padding:2.5pt 6pt}.tight .legend{font-size:10.6pt}img.shot.w60{width:60%}img.shot.w50{width:50%}img.shot.w45{width:45%}
+img.shot{display:block;margin-left:auto!important;margin-right:auto!important;width:100%;border-radius:8px;border:2px solid #b8902f;box-shadow:0 3px 8px rgba(0,0,0,.25);margin:5pt 0 3pt}
+.cap{font-style:italic;color:#6b4a2a;font-size:10.8pt;margin:0 0 9pt;text-align:center}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14pt}
+.two img.shot{margin-top:0}
+.tip{background:#fbf0d6;border:2px solid #d4a84c;border-radius:10px;padding:7pt 11pt;margin:8pt 0;break-inside:avoid}
+.tip b:first-child{font-family:Rye;font-weight:400;color:#7a1e1e;margin-right:4pt}
+table{width:100%;border-collapse:collapse;margin:5pt 0 9pt;font-size:11.6pt;break-inside:auto}
+th{background:#5a2a12;color:#fbe7b5;font-family:Rye;font-weight:400;text-align:left;padding:4pt 7pt}
+td{padding:4pt 7pt;border-bottom:1px solid #e0cfa6;vertical-align:top}
+tr{break-inside:avoid}
+tr:nth-child(even) td{background:#fdf7e8}
+ol,ul{margin:2pt 0 8pt;padding-left:20pt}
+li{margin:2pt 0}
+.key{display:inline-block;border:1.5px solid #8a6218;border-radius:5px;padding:0 5pt;background:#fffaf0;font-weight:700;font-size:11pt}
+.diagram{position:relative;margin:6pt 0}
+.diagram img{width:100%;display:block;border-radius:8px;border:2px solid #b8902f}
+.n{position:absolute;width:22pt;height:22pt;margin:-11pt 0 0 -11pt;border-radius:50%;background:#a8172b;color:#fff;border:2.5px solid #ffe7a0;
+   font:700 12pt/18pt Libre;text-align:center;box-shadow:0 2px 5px rgba(0,0,0,.6)}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:2pt 18pt;font-size:11.4pt}
+.legend div{break-inside:avoid}
+.legend b.num{display:inline-block;width:17pt;height:17pt;border-radius:50%;background:#a8172b;color:#fff;text-align:center;font-size:10pt;line-height:17pt;margin-right:5pt}
+.family{display:grid;grid-template-columns:repeat(2,1fr);gap:6pt 16pt}
+.family div{display:flex;align-items:center;gap:9pt;break-inside:avoid;font-size:11.4pt}
+.family img{width:44pt;height:44pt;object-fit:contain;flex:none}
+.cards{display:flex;gap:10pt;justify-content:center;margin:6pt 0}
+.cards img{width:52pt;border-radius:6pt;box-shadow:0 2px 6px rgba(0,0,0,.35)}
+.toc{columns:2;column-gap:24pt;font-size:12.4pt;margin-top:10pt}
+.toc div{break-inside:avoid;padding:3pt 0;border-bottom:1px dotted #c9a24d}
+.small{font-size:10.4pt;color:#5a4a30}
+/* cover */
+.cover{height:11in;width:8.5in;position:relative;overflow:hidden;color:#f5d27a;
+  background:#2a120c radial-gradient(ellipse at 50% 30%,#6a2a1a 0%,#2a120c 70%)}
+.cover .inner{position:absolute;inset:0.55in 0.6in;text-align:center}
+.cover img.badge{width:120pt;margin-top:20pt}
+.cover h1{border:0;font-size:52pt;color:#f5d27a;margin:10pt 0 0;text-shadow:0 3px 0 #3a2008,0 6px 14px rgba(0,0,0,.7)}
+.cover .sub{font:700 14pt Libre;letter-spacing:6pt;color:#e8c46e;margin-top:6pt}
+.cover .om{font-family:Rye;font-size:30pt;color:#fbe7b5;margin:18pt 0 14pt}
+.cover img.hero{width:100%;border:4px solid #b8902f;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.7)}
+.cover .foot{position:absolute;bottom:0;left:0;right:0;font-size:12pt;color:#e8c46e}
+
+@media screen{
+ html{background:#2a1408}
+ body{max-width:8.5in;margin:0 auto;padding:0 0 30px}
+ body>section,body>div.cover{background:#fffaf0;margin:18px 0;padding:0.55in 0.6in 0.6in;border-radius:6px;box-shadow:0 4px 18px rgba(0,0,0,.5)}
+ .webbar{position:sticky;top:0;z-index:9;background:#3a1d0c;color:#f2d48a;font:14px/1.4 Libre,Georgia,serif;padding:9px 14px;
+   display:flex;gap:18px;align-items:center;justify-content:space-between;border-bottom:2px solid #b8902f}
+ .webbar a{color:#ffe7a8}
+}
+@media screen and (max-width:700px){ body>section{padding:18px 14px} .two{grid-template-columns:1fr!important} }
+@media print{ .webbar{display:none} }
+</style></head>
+<body><div class="webbar"><span><a href="../index.html">← Perry's Parlor</a></span><span>Owner's Manual</span><span><a href="Perrys-Parlor-Owners-Manual.pdf">Download the PDF</a></span></div>
+
+<!-- ======================= COVER ======================= -->
+<section class="cover"><div class="inner">
+  <img class="badge" src="img/star.png">
+  <h1>Perry's Parlor</h1>
+  <div class="sub">SPIDER SOLITAIRE · EST. 1885</div>
+  <div class="om">Owner's Manual</div>
+  <img class="hero" src="img/welcome.jpg">
+  <div class="foot">For Windows computers and Android phones &amp; tablets · Version v2r11 · October 2026</div>
+</div></section>
+
+<!-- ======================= WELCOME ======================= -->
+<section class="chapter">
+<h1>Welcome, Partner</h1>
+<p class="lead">Perry's Parlor is the classic card game Spider Solitaire, dealt on green felt in an Old West saloon parlor.
+There's ragtime on the player piano, a cat asleep by the window, a barkeep named Mose, and a whole family of friendly spiders
+who drop by to celebrate when you win — but never every time.</p>
+<p>This manual explains everything in plain words. You don't need to read it all before you play: the game is built so that
+nothing you do can break it, every move can be taken back, and help is always one button away.
+Read <b>Getting Started</b> and <b>How to Play</b>, then come back to the rest whenever you're curious.</p>
+<div class="tip"><b>Good to know</b> The game saves by itself after every move. Close it whenever you like — your hand will be waiting.</div>
+<h2>What's Inside</h2>
+<div class="toc">
+<div>1. Getting Started</div><div>2. The Welcome Screen</div><div>3. How to Play Spider</div><div>4. The Card Table</div>
+<div>5. Help When You Need It</div><div>6. Playing on a Phone</div><div>7. Which Game to Play</div><div>8. Playing the Same Hand as Family</div>
+<div>9. When You Win</div><div>10. The Spider Family</div><div>11. The Ledger: Your Record</div><div>12. Life in the Parlor</div>
+<div>13. Settings</div><div>14. Your Own Photos on the Cards</div><div>15. The Back Room</div><div>16. Players and the Guest Book</div>
+<div>17. Keys and Buttons</div><div>18. Questions and Answers</div><div>19. Privacy and Credits</div>
+</div>
+</section>
+
+<!-- ======================= 1 GETTING STARTED ======================= -->
+<section class="chapter">
+<h1>1. Getting Started</h1>
+<h2>On a Windows computer</h2>
+<ol>
+<li>Double-click <b>Perrys Parlor v2r11 Setup.exe</b> (the numbers at the end are the version).</li>
+<li>Windows may show a blue box that says <i>"Windows protected your PC."</i> That only means the game isn't from a big company.
+Click <b>More info</b>, then <b>Run anyway</b>.</li>
+<li>Click <b>Install</b>, then <b>Finish</b> (leave "Open Perry's Parlor now" ticked to start right away). A gold sheriff's star called <b>Perry's Parlor</b> appears on your desktop and in the Start menu.</li>
+<li>Double-click the star whenever you want to play.</li>
+</ol>
+<p>There's also a no-install copy (<b>Perrys Parlor v2r11.exe</b>): double-click it to play straight away.</p>
+<h2>On an Android phone or tablet</h2>
+<ol>
+<li>Once Perry's Parlor is in the Play Store: open the <b>Play Store</b>, search for <b>Perry's Parlor</b>, and tap <b>Install</b>.</li>
+<li>Tap <b>Open</b>, or find the gold star among your apps.</li>
+<li>Turn the phone sideways — the game plays in landscape, so the whole table fits.</li>
+</ol>
+<h2>The first time you open it</h2>
+<div class="two"><div>
+<p>The barkeep asks what to call you. Type a name — "Mr. Perry", "Grandpa", anything you like — and click
+<b>Pull Up a Chair</b>. The game greets you by that name, writes it in the Ledger, and puts it in the headlines when you win.</p>
+<p>Anyone else who plays can add their own name later, and everyone keeps their own scores (see <b>Players and the Guest Book</b>).</p>
+</div><div><img class="shot" src="img/guest.jpg"><p class="cap">The Guest Book on the first visit</p></div></div>
+<h2>Getting a newer version later</h2>
+<p>On Windows, run the new Setup the same way — your name, scores, Ledger, photos and Spider Family Album are all kept.
+On Android, the Play Store updates the game by itself.</p>
+</section>
+
+<!-- ======================= 2 WELCOME SCREEN ======================= -->
+<section class="chapter">
+<h1>2. The Welcome Screen</h1>
+<style>#wtab td{font-size:10.8pt;padding:2.5pt 6pt}</style>
+<img class="shot w60" src="img/welcome.jpg"><p class="cap">Mose the barkeep says hello. When you have a game going, "Continue Your Game" is right on top.</p>
+<table id="wtab">
+<tr><th style="width:32%">Button</th><th>What it does</th></tr>
+<tr><td><b>Continue Your Game</b></td><td>Picks up the hand you were playing, exactly where you left it.</td></tr>
+<tr><td><b>How many suits?</b></td><td>Choose 1 Suit (Easy), 2 Suits (Medium), 3 Suits (Harder) or 4 Suits (Hardest). 1 Suit is the classic place to start.</td></tr>
+<tr><td><b>Winnable hands only</b></td><td>On: every hand dealt has already been solved by the computer, so it can always be won. Off: any shuffle at all, the old-fashioned way.</td></tr>
+<tr><td><b>Deal Me In</b></td><td>Deals a fresh hand with the suits you picked.</td></tr>
+<tr><td><b>Hand of the Day</b></td><td>Today's special hand — everyone who plays it today with the same number of suits gets the very same cards.</td></tr>
+<tr><td><b>Play a Hand #</b></td><td>Type a hand number to play an exact deal (see chapter 8).</td></tr>
+<tr><td><b>Other Games</b></td><td>Spiderette, Relaxed Spider, the <b>Wanted Hand of the Day</b> ($250), and <b>Show Me How</b> — watch the game play a hand by itself.</td></tr>
+<tr><td><b>The Ledger</b></td><td>Your record: wins, streaks, best scores, rank and brass plaques.</td></tr>
+<tr><td><b>Settings</b></td><td>Felt colour, card styles, sound, and much more (chapter 13).</td></tr>
+<tr><td><b>How to Play</b></td><td>A one-page picture guide to the rules.</td></tr>
+<tr><td><b>Not Mr. Perry?</b></td><td>Switch to a different player, or add a new one.</td></tr>
+<tr><td><b>Leave the Parlor</b></td><td>Closes the game. It asks first, and your hand is saved.</td></tr>
+</table>
+</section>
+
+<!-- ======================= 3 HOW TO PLAY ======================= -->
+<section class="chapter">
+<h1>3. How to Play Spider</h1>
+<style>#howto{font-size:11.5pt;line-height:1.38} #howto li{margin:1pt 0} #howto td{padding:2.2pt 7pt} #howto .lead{font-size:12.4pt}</style><div id="howto">
+<p class="lead">The goal: build each suit in order from King down to Ace, all in one column. A finished run of thirteen
+cards slides off the table on its own. Clear them all and you win. (The face cards are painted frontier folk — the King of Spades is Sheriff Perry.)</p>
+<div class="cards"><img src="img/frontier_two_S13.png"><img src="img/frontier_two_H12.png"><img src="img/large_two_D07.png"><img src="img/classic_two_C07.png"></div>
+
+<h2>The rules, plainly</h2>
+<ul>
+<li><b>Moving a card:</b> put a card on any card one higher — a 7 on an 8, a Jack on a Queen. The suit doesn't matter for a single card.</li>
+<li><b>Moving a group:</b> a run of cards that are in order <i>and the same suit</i> can move together. Mixed suits stay put until you sort them out.</li>
+<li><b>Turning cards over:</b> when you move the last face-up card off a column, the card underneath turns over by itself.</li>
+<li><b>Empty columns:</b> an empty column can take any card or any same-suit run. Empty columns are very handy — use them wisely.</li>
+<li><b>Dealing:</b> when you're out of good moves, click the deck to deal one new card onto every column.
+Every column needs at least one card before you can deal. (Relaxed Spider lets you deal any time.)</li>
+<li><b>Finishing a suit:</b> when a column holds a full run from King to Ace in one suit, it gathers up with a gold shine and a "ta-da!", and goes home.</li>
+</ul>
+<h2>Scoring</h2>
+<table>
+<tr><th>When</th><th>Score</th></tr>
+<tr><td>You start every hand with</td><td>500 points</td></tr>
+<tr><td>Each move, each deal, each Undo</td><td>−1 point</td></tr>
+<tr><td>Undoing the move that finished a suit</td><td>takes its 100 back</td></tr>
+<tr><td>Each suit you finish</td><td>+100 points</td></tr>
+</table>
+<p>So fewer moves means a higher score (it never shows less than 0). The brass tag under the pocket watch (the clock at the top right on a
+phone) times the hand: it starts with your first move or deal and pauses whenever a menu is open or you step away from the game.</p>
+<div class="tip"><b>A good habit</b> Turn over face-down cards whenever you can, and try to build runs in one suit. In a 1-suit game every run is the same suit, which is why it's the easiest.</div>
+</div></section>
+
+<!-- ======================= 4 THE CARD TABLE ======================= -->
+<section class="chapter tight">
+<h1>4. The Card Table</h1>
+<div class="diagram" style="width:92%;margin:4pt auto"><img src="img/table.jpg">
+<b class="n" style="left:7%;top:5%">1</b>
+<b class="n" style="left:13.6%;top:4%">2</b>
+<b class="n" style="left:73.4%;top:6%">3</b>
+<b class="n" style="left:83%;top:4%">4</b>
+<b class="n" style="left:91.4%;top:23%">5</b>
+<b class="n" style="left:37%;top:53%">6</b>
+<b class="n" style="left:86.3%;top:84%">7</b>
+<b class="n" style="left:2.6%;top:70%">8</b>
+<b class="n" style="left:22.3%;top:95.6%">9</b>
+<b class="n" style="left:27.4%;top:95.3%">10</b>
+<b class="n" style="left:75.4%;top:95%">11</b>
+<b class="n" style="left:83.4%;top:93.6%">12</b>
+<b class="n" style="left:33.4%;top:18.7%">13</b>
+<b class="n" style="left:30.5%;top:13%">14</b>
+</div>
+<div class="legend">
+<div><b class="num">1</b><b>The window and the cat.</b> Click the window to switch between day and night. Click the sleeping cat: it wakes, yawns, meows and curls back up.</div>
+<div><b class="num">2</b><b>Score</b> and the number of moves so far.</div>
+<div><b class="num">3</b><b>The pocket watch</b> tells the real time; the brass tag under it is your time on this hand.</div>
+<div><b class="num">4</b><b>The Wanted poster.</b> Hands that got away go up here — or, when there are none, the Wanted Hand of the Day. Click it.</div>
+<div><b class="num">5</b><b>Deputy Dangle</b> waves from his thread. Click him and he swings to and fro.</div>
+<div><b class="num">6</b><b>The ten columns</b> where you play. Long columns squeeze together — every card stays readable.</div>
+<div><b class="num">7</b><b>The deck.</b> Click it to deal a new row. Each little pile is one deal.</div>
+<div><b class="num">8</b><b>Mose the barkeep</b> pops up now and then with a kind word. Finished suits stack in this corner, King on top.</div>
+<div><b class="num">9</b><b>Suits home.</b> A shot glass fills for each finished suit — 8 in all (4 in Spiderette).</div>
+<div><b class="num">10</b><b>Undo, Hint, New Hand and Menu</b> — big buttons, always here.</div>
+<div><b class="num">11</b><b>The Back Room door.</b> Click to switch between the Parlor and the plain Back Room.</div>
+<div><b class="num">12</b><b>The hand number</b> and which game you're playing.</div>
+<div><b class="num">13</b><b>The song plate:</b> the song now playing, <b>Pick a Song</b> and <b>Skip Song</b> (chapter 12).</div>
+<div><b class="num">14</b><b>The lamps.</b> Click either one: Off, Low, Medium, High, then round again.</div>
+</div>
+<div class="tip"><b>Hover for a hint</b> On a computer, rest the mouse on something in the parlor and a little label tells you what it is.</div>
+</section>
+
+<!-- ======================= 5 HELP ======================= -->
+<section class="chapter">
+<h1>5. Help When You Need It</h1>
+<h2>Moving cards</h2>
+<p><b>Click (or tap) a card</b> and it jumps to the best place it can go. Or <b>drag</b> it wherever you like —
+the column it can land on lights up. If a card can't move, it gives a little shake.</p>
+<h2>Undo — as many times as you like</h2>
+<p>Changed your mind? Click <b>Undo</b>. It takes back moves and deals one at a time, all the way back to the start of the hand.</p>
+<h2>Hint — shows you a good move</h2>
+<img class="shot" src="img/hint.jpg">
+<p class="cap">A thick gold frame shows the cards to move, a gold arrow points where they go, and a note says it in words.</p>
+<p>If there are no moves left on the table, Hint points to the deck. If the hand is truly stuck, it says so — try Undo, or deal a fresh hand.</p>
+<h2>Finish it for me</h2>
+<p>Near the end of a hand, when the computer can see that the rest is certain to come out, a <b>Finish it for me</b> button appears.
+Click it and the game plays out the last moves for you.</p>
+<h2>Show Me How</h2>
+<div class="two"><div><img class="shot" src="img/demo.jpg"></div><div>
+<p>In <b>Other Games → Show Me How</b> (or the <b>Show Me How</b> button on the How to Play page), the game plays a whole hand by itself,
+slowly, explaining each kind of move as it goes. Click <b>Stop the Demonstration</b> whenever you're ready to play.
+A demonstration never counts in your record.</p></div></div>
+<h2>The Menu</h2>
+<div class="two"><div><img class="shot" src="img/menu.jpg"></div><div>
+<p><b>Back to the Table</b>, <b>Deal a Different Game</b>, <b>Restart This Hand</b> (same cards from the beginning — it doesn't count as a loss),
+<b>Piano Requests</b>, <b>The Ledger</b>, <b>Spider Family Album</b>, <b>Settings</b>, <b>How to Play</b> and <b>Leave the Parlor</b>.</p></div></div>
+<div class="tip"><b>Nothing is lost by accident</b> Whenever something would end a hand you've started — a new deal, a different game — the game asks first.</div>
+</section>
+
+<!-- ======================= 6 PHONE ======================= -->
+<section class="chapter">
+<h1>6. Playing on a Phone</h1>
+<p class="lead">On a phone the parlor rearranges itself so the cards can be as big as possible. (On a tablet you get the full parlor with the painted wall, just like on a computer.)</p>
+<img class="shot w45" src="img/p_table.jpg"><p class="cap">The phone table: score, buttons and clock along the top; finished suits and the deck in a lane on the right.</p>
+<ul>
+<li><b>Hold the phone sideways.</b> The game always plays in landscape.</li>
+<li><b>Tap</b> a card to move it to the best spot, or <b>drag</b> it with your finger.</li>
+<li><b>Tap the deck</b> on the right to deal.</li>
+<li><b>The phone's Back button</b> closes whatever is open — a menu, a screen — or opens the menu when you're at the table.
+On the welcome screen it asks whether you want to leave.</li>
+<li>Settings, the Ledger, How to Play and the Album <b>scroll</b>: slide a finger up and down on them.</li>
+<li>When choosing a photo, <b>pinch</b> with two fingers to zoom (or use the <b>−</b> and <b>+</b> buttons).</li>
+<li>A phone has no room for the painted wall, so there's no window, cat, lamps, Wanted poster or broom. Switch to the Back Room in <b>Settings</b>,
+and find the Wanted hands under the Ledger's <b>Ride Out</b> or in <b>Other Games</b>. To leave, press Back on the welcome screen.</li>
+</ul>
+<div class="two"><div><img class="shot" src="img/p_hint.jpg"><p class="cap">Hint on a phone</p></div>
+<div><img class="shot" src="img/p_welcome.jpg"><p class="cap">The welcome screen on a phone</p></div></div>
+</section>
+
+<!-- ======================= 7 WHICH GAME ======================= -->
+<section class="chapter">
+<h1>7. Which Game to Play</h1>
+<table>
+<tr><th style="width:30%">Game</th><th>What's different</th></tr>
+<tr><td><b>Spider, 1 Suit</b> (Easy)</td><td>All 104 cards are spades. Any run is a same-suit run, so groups move freely. The best place to start.</td></tr>
+<tr><td><b>Spider, 2 Suits</b> (Medium)</td><td>Spades and hearts. Now you have to sort the colours out.</td></tr>
+<tr><td><b>Spider, 3 Suits</b> (Harder)</td><td>Spades, hearts and diamonds.</td></tr>
+<tr><td><b>Spider, 4 Suits</b> (Hardest)</td><td>All four suits — the real test.</td></tr>
+<tr><td><b>Spiderette</b></td><td>One deck, seven columns — a shorter, quicker game, in 1, 2 or 4 suits (with 3 picked it deals 2). Under <b>Other Games</b>.</td></tr>
+<tr><td><b>Relaxed Spider</b></td><td>The same as Spider, but you may deal even when a column is empty. Under <b>Other Games</b>.</td></tr>
+</table>
+<h2>Winnable hands only</h2>
+<p>With this switched on (it is, to begin with), every hand you're dealt has been solved by the computer first — thousands of them,
+for every kind of game. If a hand seems impossible, it isn't: try Undo, a Hint, or Restart This Hand.
+Switch it off on the welcome screen for a completely random shuffle.</p>
+<h2>Bigger, clearer cards</h2>
+<p>In Settings you can choose <b>Large Print</b> faces, <b>Extra-Large</b> cards (on a computer), <b>four-colour suits</b>
+(blue diamonds, green clubs) and <b>High contrast</b>. See chapter 13.</p>
+</section>
+
+<!-- ======================= 8 SAME HAND ======================= -->
+<section class="chapter tight">
+<h1>8. Playing the Same Hand as Family</h1>
+<p class="lead">Every deal has a <b>hand number</b>, shown at the bottom right of the table. Same number plus same number of suits
+means exactly the same cards — so you can race the family on the same hand, no internet needed.</p>
+<h2>Play a Hand #</h2>
+<ol><li>On the welcome screen, click <b>Play a Hand #</b>.</li><li>Type the number (for example 48213) and pick the suits.</li><li>Click <b>Deal It</b>. Then compare your scores and times.</li></ol>
+<h2>Hand of the Day</h2>
+<p>Each day there's one special hand for each number of suits. Everyone who plays the Hand of the Day with the same suits gets the same cards that day — a friendly daily contest.
+Win it and Professor Octavius Eightlegs may stop by to congratulate you.</p>
+<h2>Send a Telegram</h2>
+<p>After a win, click <b>Send a Telegram</b>. The game copies a short message — your game, hand number, time, score and moves,
+plus a "Can you beat it?" challenge — so you can paste it into a text message or email to the family.</p>
+<h2>The Wanted poster</h2>
+<div class="two"><div><img class="shot" src="img/wanted.jpg"></div><div>
+<p>A hand you gave up on goes up on the <b>Wanted poster</b> on the wall. Click the poster (or <b>Try #… Again</b> in the Ledger) to
+deal that exact hand again. Win it and you collect a <b>$100 bounty</b> — and, the first time, the Bounty Collected brass plaque.</p></div></div>
+<h2>The Wanted Hand of the Day — $250</h2>
+<p>Every day one of the <b>toughest</b> winnable hands in town is wanted, matched to the number of suits you play. Everyone who plays
+the same suits gets the same outlaw that day. Bring it in for a <b>$250 bounty</b> and the <b>Outlaw of the Day</b> plaque.
+Find it on the Wanted poster (when no other outlaws are at large), in the Ledger right beside the Wanted hand
+(<b>Ride Out</b>), and in <b>Other Games</b>.</p>
+</section>
+
+<!-- ======================= 9 WHEN YOU WIN ======================= -->
+<section class="chapter">
+<h1>9. When You Win</h1>
+<div class="two"><div><img class="shot" src="img/cascade.jpg"><p class="cap">The cards bounce across the felt with confetti</p></div>
+<div><img class="shot" src="img/granny.jpg"><p class="cap">Sometimes a member of the Spider Family drops by</p></div></div>
+<div class="two"><div><img class="shot" src="img/gazette.jpg"><p class="cap">Big days make the front page of the Parlor Gazette</p></div>
+<div><img class="shot" src="img/wincard.jpg"><p class="cap">The win card: your score, time and moves</p></div></div>
+<p>Every win in the parlor gets the bouncing-card celebration, a hoedown on the piano, and a sepia "tintype" photograph for your Scrapbook
+(the latest 60 are kept). Click anywhere to hurry it along. In the Back Room a win ends with a gold cascade instead.</p>
+<p>Now and then — never every time — a spider comes to visit, and the first time you meet one they join your <b>Spider Family Album</b>.
+On special days the <b>Parlor Gazette</b> prints an extra edition: your first win, a new record, a promotion, a win milestone
+(10, 25, 50, 100 wins and on), a new parlor decoration, a bounty collected, the Outlaw of the Day, your first four-suit win, the Hand of the Day.</p>
+<p>The win card lists your score, time and moves, any new brass plaques, and gives you three choices:
+<b>Deal Again</b>, <b>Replay This Hand</b>, or <b>Send a Telegram</b> — or go back to the <b>Main Menu</b>.</p>
+</section>
+
+<!-- ======================= 10 SPIDER FAMILY ======================= -->
+<section class="chapter tight">
+<h1>10. The Spider Family</h1>
+<p class="lead">Thirteen spiders (and Mose) live in and around the parlor. Each one turns up for a particular reason.
+Collect them all in the <b>Spider Family Album</b> — a silhouette marks the ones you haven't met yet.
+Every one of them is animated: Banjo Bill strums, Granny Weaver knits, Lasso Lou twirls his rope, Little Tad jumps for joy.
+In the Album they hold still until you rest the mouse on one (or tap it on a phone).</p>
+<div class="family">
+<div><img src="img/sp_deputy.png"><span><b>Deputy Dangle</b> — the host; he celebrates your very first win.</span></div>
+<div><img src="img/sp_doc.png"><span><b>Doc Webb</b> — spins you a message in his web.</span></div>
+<div><img src="img/sp_silas.png"><span><b>Silas</b> — the rare Golden Spider (2-suit games and up). Lucky you!</span></div>
+<div><img src="img/sp_ma.png"><span><b>Ma Webb</b> — brings pie when you win three in a row.</span></div>
+<div><img src="img/sp_tad.png"><span><b>Little Tad</b> — cheers your first win of the day.</span></div>
+<div><img src="img/sp_granny.png"><span><b>Granny Weaver</b> — knits a sampler for milestones.</span></div>
+<div><img src="img/sp_banjo.png"><span><b>Banjo Bill</b> — leads the Square Dance.</span></div>
+<div><img src="img/sp_lou.png"><span><b>Lasso Lou</b> — ropes in a long, hard-won hand.</span></div>
+<div><img src="img/sp_clem.png"><span><b>Miss Clementine Crawley</b> — sings when you set a new record.</span></div>
+<div><img src="img/sp_jasper.png"><span><b>Jasper Silk</b> — shows up for fast wins.</span></div>
+<div><img src="img/sp_prof.png"><span><b>Prof. Octavius Eightlegs</b> — for Hand of the Day wins.</span></div>
+<div><img src="img/sp_cookie.png"><span><b>Cookie</b> — rings the dinner bell every 25th game.</span></div>
+<div><img src="img/sp_dusty.png"><span><b>Dusty</b> — rolls past the window now and then.</span></div>
+<div><img src="img/sp_mose.png"><span><b>Mose the Barkeep</b> — greetings and one-liners, always.</span></div>
+</div>
+<img class="shot w40" src="img/album.jpg"><p class="cap">The Spider Family Album, part-way filled in</p>
+<p>How often they visit is up to you: <b>Settings → Spider visits → Often, Sometimes or Never</b>.</p>
+</section>
+
+<!-- ======================= 11 LEDGER ======================= -->
+<section class="chapter">
+<h1>11. The Ledger: Your Record</h1>
+<img class="shot" src="img/ledger.jpg">
+<p>The Ledger is a leather-bound book with a tab for each kind of game. The left page shows your <b>rank</b> and your numbers:
+games played and won, win rate, current and best streak, best score, fastest win and average win. The right page holds the
+<b>Hall of Fame</b> (your five best wins), your <b>recent hands</b>, the <b>Wanted</b> list and your <b>brass plaques</b>.</p>
+<div class="two"><div>
+<h3>Tin Star ranks</h3>
+<table><tr><th>Rank</th><th>Total wins</th></tr>
+<tr><td>Greenhorn</td><td>0</td></tr><tr><td>Ranch Hand</td><td>5</td></tr><tr><td>Wrangler</td><td>15</td></tr>
+<tr><td>Deputy</td><td>30</td></tr><tr><td>Sheriff</td><td>60</td></tr><tr><td>Marshal</td><td>100</td></tr>
+<tr><td>Legend of the West</td><td>200</td></tr></table>
+</div><div>
+<h3>Brass plaques</h3>
+<p class="small">First Win · 10, 50, 100 and 250 Wins · 5 in a Row · 10 in a Row · Quick Draw (a win in under 5 minutes) ·
+No Take-Backs (a win without Undo) · Two-, Three- and Four-Suit Wins · Hand of the Day · Bounty Collected · Outlaw of the Day · Spiderette Win</p>
+<h3>Under the book</h3>
+<p class="small"><b>Spider Family Album</b> — everyone you've met.<br><b>Tintype Scrapbook</b> — a sepia photograph of every parlor win (the latest 60).</p>
+</div></div>
+</section>
+
+<!-- ======================= 12 PARLOR LIFE ======================= -->
+<section class="chapter tight">
+<h1>12. Life in the Parlor</h1>
+<style>#ch12{font-size:10.7pt;line-height:1.3} #ch12 .two{grid-template-columns:2fr 3fr} #ch12 h2{margin:7pt 0 3pt;font-size:15pt} #ch12 ul{margin-bottom:4pt}</style><div id="ch12">
+<h2>Things to click</h2>
+<table>
+<tr><th style="width:30%">Click</th><th>What happens</th></tr>
+<tr><td>The window</td><td>Switches between day and night outside.</td></tr>
+<tr><td>The cat</td><td>It wakes up, yawns, gives a little meow and curls back up to sleep.</td></tr>
+<tr><td>The lamps</td><td>Off, Low, Medium and High — the lamplight on the table follows.</td></tr>
+<tr><td>Deputy Dangle</td><td>He swings to and fro on his thread.</td></tr>
+<tr><td>The Wanted poster</td><td>Try a hand that got away, or the Wanted Hand of the Day.</td></tr>
+<tr><td>The song plate (under the sign)</td><td><b>Pick a Song</b> or <b>Skip Song</b>.</td></tr>
+<tr><td>The player piano</td><td>Opens Piano Requests, to pick a song.</td></tr>
+<tr><td>The spittoon (from 10 wins)</td><td>Ding!</td></tr>
+</table>
+<h2>The music</h2>
+<p>The song plate under the sign (number 13 in chapter 4) shows what's playing. Original ragtime, waltzes and cakewalks play on the player piano, with gentler tunes in the evening and a hoedown for every
+win. It never plays three of the same kind of tune in a row. Turn it up, down or off in Settings.</p>
+<ul>
+<li><b>Skip Song</b> moves straight on to the next song. For 20 seconds afterwards the plate offers
+<b>Don't Play It Again</b> — click it and that song is taken out of your playlist — or <b>Never Mind</b> to close the offer.</li>
+<li>Changed your mind? <b>Settings → Skipped Songs</b> lists every song you've taken out, each with <b>Put Back in Playlist</b>
+(and <b>Put Them All Back</b> when there's more than one).</li>
+<li><b>Pick a Song</b> (or the player piano on the wall, or <b>Piano Requests</b> in the Menu) lets you choose a song, and it starts right away.</li>
+<li>On a phone, the <b>♪ Skip</b> button is in the top bar.</li>
+</ul>
+<h2>Mose, and the face cards</h2>
+<div class="two"><div><img class="shot" src="img/doze.jpg"><p class="cap">Three quiet minutes, and the Kings, Queens and Jacks nod off</p></div><div>
+<p class="small">Mose greets you by name, polishes his glasses and pipes up now and then. Make him Chatty, Quiet or Silent in Settings.</p>
+<p class="small">Leave the game alone for three minutes and the face cards that are showing close their eyes and let their heads droop,
+one by one, with little "z"s floating up (Frontier and Classic faces; Large Print faces stay awake). Move the mouse or touch anything and they wake up.</p>
+<p class="small">And for anyone who can't stand spiders: there's a secret somewhere in the parlor. Look around.</p>
+</div></div>
+<h2>The parlor grows, holidays and the train</h2>
+<p>Your winnings decorate the parlor: a <b>spittoon</b> at 10 wins, <b>longhorns</b> at 25, a <b>chandelier</b> at 50 and a
+<b>gramophone</b> at 100 (click it for Piano Requests). With <b>Holidays</b> on, the parlor dresses up for Valentine's Day, the Fourth
+of July, Halloween, Thanksgiving and Christmas; with <b>The 4:10 train</b> on, a whistle sounds on the hour and a little train crosses the window
+(not in the Back Room or with Parlor life on Still).</p>
+</div></section>
+
+<!-- ======================= 13 SETTINGS ======================= -->
+<section class="chapter tight">
+<h1>13. Settings</h1>
+<style>#settab td{font-size:9.9pt;padding:1.8pt 6pt}</style>
+<img class="shot w35" src="img/settings.jpg">
+<p>Every change happens right away and is saved by itself. <b>Reset to defaults</b> puts the settings back the way they started
+(your name, scores, photos, card back and skipped songs are kept).</p>
+<table id="settab">
+<tr><th style="width:30%">Setting</th><th>Choices</th></tr>
+<tr><td>Play in the Back Room</td><td>Just the cards, all the class — see chapter 15.</td></tr>
+<tr><td>Felt colour</td><td>Saloon Green, Saddle Brown, Midnight Black, Faro Burgundy, Riverboat Navy, Prairie Tan, Gunmetal Grey, Royal Purple.</td></tr>
+<tr><td>Card backs</td><td>Twelve designs: Perry's Parlor Monogram, Classic Red, Classic Blue, Riverboat Gambler, Railroad, Gold Rush, Wanted Poster, Cattle Brand, Sheriff's Star, Spider Web, Golden Spider, Square Dance — click <b>More…</b> to see them all.</td></tr>
+<tr><td>Your photo</td><td>Put your own pictures on the card backs (chapter 14).</td></tr>
+<tr><td>Face cards</td><td>Frontier (painted portraits), Large Print (extra-big letters) or Classic.</td></tr>
+<tr><td>Card size</td><td>Large or Extra-Large (computer only — a phone always uses the biggest that fits).</td></tr>
+<tr><td>Four-colour suits</td><td>Blue diamonds and green clubs, so all four suits look different.</td></tr>
+<tr><td>High contrast</td><td>A darker felt, so the cards stand out.</td></tr>
+<tr><td>Full screen</td><td>Off (the usual way): the game opens in a window you can move and resize by its edges, and it remembers its size. On: it fills the whole screen. Computer only; <span class="key">F11</span> also switches.</td></tr>
+<tr><td>Show the timer</td><td>Show or hide your time on this hand (the brass tag under the watch; the clock on a phone).</td></tr>
+<tr><td>Music / Sound effects</td><td>Music: on or off, and how loud. Sound effects: how loud (all the way down for silence).</td></tr>
+<tr><td>Skipped songs</td><td>Songs you took out with Skip Song → Don't Play It Again; put any of them back.</td></tr>
+<tr><td>Spider visits</td><td>Often, Sometimes or Never.</td></tr>
+<tr><td>Parlor life</td><td>Lively, Calm or Still — how much moves around in the parlor.</td></tr>
+<tr><td>Mose chatter</td><td>Chatty, Quiet or Silent.</td></tr>
+<tr><td>Gentle motion</td><td>Shorter, calmer animations: no swinging doors, and the characters hold still.</td></tr>
+<tr><td>Holidays · The 4:10 train</td><td>Holiday decorations; a train whistle on the hour.</td></tr>
+<tr><td>Guest Book</td><td><b>Change Name</b> or <b>Add a Player</b>.</td></tr>
+</table>
+</section>
+
+<!-- ======================= 14 PHOTOS ======================= -->
+<section class="chapter">
+<h1>14. Your Own Photos on the Cards</h1>
+<style>.ph{grid-template-columns:2fr 3fr}</style>
+<p class="lead">Put a family photo, a pet or a favourite place on the back of every card. Go to <b>Settings → Use a Photo…</b> (once you've added one it's called <b>My Photos…</b>) and follow three steps.</p>
+<div class="two ph"><div><img class="shot" src="img/photo1.jpg"><p class="cap">Step 1 — Choose a Photo…</p></div><div>
+<h3>1. Choose a photo</h3><p>Click <b>Choose a Photo…</b> and pick a picture. On a phone, your phone's own photo picker opens.</p></div></div>
+<div class="two ph"><div><img class="shot" src="img/photo2.jpg"><p class="cap">Step 2 — slide and zoom</p></div><div>
+<h3>2. Slide &amp; zoom</h3><p>Drag the photo so the best part sits inside the card shape. Use <b>−</b> and <b>+</b> (or pinch on a phone) to zoom.
+Is the picture lying on its side? Click <b>Turn the Photo</b>. The little card on the right shows how it will look. Click <b>Next</b>.</p></div></div>
+<div class="two ph"><div><img class="shot" src="img/photo3.jpg"><p class="cap">Step 3 — pick a style</p></div><div>
+<h3>3. Pick a style</h3><p>Natural colour, <b>Old-Time Sepia</b> or <b>Tintype</b>, with a Gold, Wood or no border. Click <b>Done</b>.</p></div></div>
+<p>Add as many photos as you like. Turn on <b>Family Album</b> to get a different photo on each new hand. To take a photo off the cards,
+open <b>My Photos…</b> and click <b>Remove</b> under it — the picture on your computer or phone itself is never touched.</p>
+</section>
+
+<!-- ======================= 15 BACK ROOM ======================= -->
+<section class="chapter">
+<h1>15. The Back Room</h1>
+<img class="shot" src="img/backroom.jpg">
+<p>Sometimes you just want the cards. The <b>Back Room</b> hides the parlor, the visitors and Mose, and keeps the handsome table,
+the cards and the smooth animations. Wins end with an elegant gold cascade instead of the full celebration.</p>
+<p>Switch it on or off with the little <b>door</b> at the bottom of the table, or with <b>Play in the Back Room</b> at the top of Settings.
+Your record and everything else stays exactly the same.</p>
+</section>
+
+<!-- ======================= 16 PLAYERS ======================= -->
+<section class="chapter">
+<h1>16. Players and the Guest Book</h1>
+<p>Several people can share the game, and each keeps their own name, saved hand, Ledger, plaques and Spider Family Album.</p>
+<ul>
+<li><b>Add someone:</b> on the welcome screen click <b>Not Mr. Perry?</b> (it shows the current name). With one name in the book the
+Guest Book opens for the new name; with more, pick <b>+ Someone New</b>. Or use <b>Settings → Guest Book → Add a Player</b>.</li>
+<li><b>Switch players:</b> click <b>Not Mr. Perry?</b> and pick a name. Your own hand is put away safely and comes back when you return.</li>
+<li><b>Change a name:</b> <b>Settings → Guest Book → Change Name</b>.</li>
+</ul>
+<h1 style="margin-top:22pt">17. Keys and Buttons</h1>
+<table>
+<tr><th style="width:38%">On a computer</th><th>Does</th></tr>
+<tr><td><span class="key">Ctrl</span> + <span class="key">Z</span></td><td>Undo</td></tr>
+<tr><td><span class="key">H</span></td><td>Hint</td></tr>
+<tr><td><span class="key">Esc</span></td><td>Open the menu at the table · leave a screen</td></tr>
+<tr><td><span class="key">F11</span></td><td>Full screen on or off</td></tr>
+<tr><th>On a phone</th><th>Does</th></tr>
+<tr><td>Tap a card</td><td>Move it to the best spot</td></tr>
+<tr><td>Drag a card</td><td>Move it where you like</td></tr>
+<tr><td>The Back button</td><td>Close what's open · open the menu at the table</td></tr>
+<tr><td>Slide a finger</td><td>Scroll Settings, the Ledger, How to Play and the Album</td></tr>
+<tr><td>Pinch</td><td>Zoom a photo in Use a Photo</td></tr>
+<tr><td>♪ Skip (top bar)</td><td>Skip to the next song</td></tr>
+</table>
+</section>
+
+<!-- ======================= 18 Q&A ======================= -->
+<section class="chapter tight" style="font-size:10.6pt;line-height:1.3">
+<h1>18. Questions and Answers</h1>
+<h3>Will I lose my game if I close it?</h3>
+<p>No. The game saves after every move. Next time, click <b>Continue Your Game</b>. (The one exception is a secret: if you ever
+<b>Rage Quit</b>, that hand counts as one that got away.)</p>
+<h3>This hand looks impossible.</h3>
+<p>With <b>Winnable hands only</b> on, every hand can be won. Try <b>Hint</b>, use <b>Undo</b> to back up a few moves and try another way,
+or <b>Menu → Restart This Hand</b> to start the same cards fresh (that doesn't count as a loss).</p>
+<h3>The cards or writing are too small.</h3>
+<p>In Settings choose <b>Large Print</b> faces, <b>Extra-Large</b> cards and <b>High contrast</b>, and turn on <b>Full screen</b>.</p>
+<h3>Too much is moving around.</h3>
+<p>Turn on <b>Gentle motion</b>, set <b>Parlor life</b> to Still, or play in <b>The Back Room</b>.</p>
+<h3>I don't like one of the songs.</h3>
+<p>Click <b>Skip Song</b> on the plate under the sign, then <b>Don't Play It Again</b>. Bring it back any time in <b>Settings → Skipped Songs</b>.</p>
+<h3>I can't hear any music.</h3>
+<p>Check <b>Settings → Music</b> is On and the slider isn't all the way down, and that your computer or phone isn't muted.</p>
+<h3>Windows says "Windows protected your PC."</h3>
+<p>Click <b>More info</b>, then <b>Run anyway</b>. It appears because the game is from a small developer, not because anything is wrong.</p>
+<h3>It says "Perry's Parlor is already open."</h3>
+<p>The game is already running — look for it on the taskbar at the bottom of the screen.</p>
+<h3>How do I update it?</h3>
+<p>On Windows, run the new Setup; everything you've done is kept. On Android, the Play Store updates it for you.</p>
+<h3>How do I uninstall it?</h3>
+<p>On Windows: <b>Settings → Apps</b>, find <b>Perry's Parlor</b>, click <b>Uninstall</b>. Your records are left behind in case you
+reinstall; to remove them too, delete the folder <i>%APPDATA%\Godot\app_userdata\Perry's Parlor</i>.
+On Android: press and hold the gold star, then <b>Uninstall</b> (this removes everything).</p>
+</section>
+
+<!-- ======================= 19 PRIVACY & CREDITS ======================= -->
+<section class="chapter">
+<h1>19. Privacy and Credits</h1>
+<h2>Your privacy</h2>
+<p>Perry's Parlor collects nothing. There's no account, no advertising, no tracking, and it never uses the internet.
+Names, scores, settings and any photos you add stay on your own computer or phone.
+The full policy is at <b>tcdeveloper27.github.io/perrys-parlor/privacy.html</b>.</p>
+<h2>Credits</h2>
+<table>
+<tr><td style="width:34%"><b>Game</b></td><td>Perry's Parlor © 2026 Legion Software. Made for Mr. Perry, and for everyone who loves a good game of Spider.</td></tr>
+<tr><td><b>Music</b></td><td>Original ragtime, waltzes, cakewalks and hoedowns created by Tim for Perry's Parlor.</td></tr>
+<tr><td><b>Sound effects</b></td><td>Kenney (kenney.nl) — Casino, Interface, Impact and Music Jingles packs, CC0. Cat recordings from Wikimedia Commons, public domain.</td></tr>
+<tr><td><b>Fonts</b></td><td>Rye and Libre Baskerville (SIL Open Font License 1.1); DejaVu Sans (Bitstream Vera license).</td></tr>
+<tr><td><b>Engine</b></td><td>Made with the Godot Engine (godotengine.org).</td></tr>
+</table>
+<p class="small" style="font-size:8.6pt;line-height:1.3">Godot Engine license: Copyright (c) 2014-present Godot Engine contributors. Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.</p>
+<div style="text-align:center;margin-top:10pt"><img src="img/star.png" style="width:44pt"><br>
+<span style="font-family:Rye;font-size:18pt;color:#5a2a12">Happy playing, partner.</span></div>
+</section>
+</body></html>
